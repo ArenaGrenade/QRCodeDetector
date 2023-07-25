@@ -36,3 +36,5 @@ Using the above techniques (I have mentioned which ones I have implemented), I w
 3. Using a feature matching algorithm find matching points and filter matches based on least distances.
 4. Compute the homography using the matched points.
 5. Using the inverse transformation, we can transform the edges of the template qr code into the real-life image space and then we just draw the bounding box.
+
+I was initially skeptical of this method, and experimentation has proven that the concerns weren't unfounded. As all QR codes look very similar, any complex feature engineering, we will do cannot exactly match one QR with another. On the other hand, one can for instance find the exact object aligned bounding box using the above framework and then transform the real world QR into a similar stage. Post this we can either extract info from qr code and then compare or just compare images - we have come this far just decode the qr and compapre strings would be way more reliable due to the error correction capabilities of QR codes.
