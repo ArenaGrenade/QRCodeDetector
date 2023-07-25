@@ -1,0 +1,11 @@
+name: qrcode_rohan
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10.6
+  - opencv
+  - scikit-image
+  - scipy
+  - matplotlib
+  - numpy
